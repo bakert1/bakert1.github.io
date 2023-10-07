@@ -13,12 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Timothy Baker
+title: TB
+title_separator: "|"  # e.g., Blog | TB
+subtitle: Timothy James Baker
+
+name: Timothy J. Baker
 email: tim@bakertim.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Personal website of Timothy James Baker, Ph.D.
 twitter_username: timothyjamesbaker
 github_username: tim-the-baker
+
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal website of Timothy James Baker, Ph.D.
 minimal_mistakes_skin: sunrise
 search: true
 
@@ -56,34 +61,41 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Timothy J. Baker, Ph.D."
+  avatar : "/assets/images/bio_photo.jpg"
+  bio    : "Research Fellow at Michigan Medicine using machine learning to aid physicians in the diagnosis and treatment of human diseases."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "tim /at/ bakertim.com"
+      icon: "fas fa-fw fa-envelope"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/timothy-james-baker/"
+    - label: "Google Scholar"
+      icon: "ai ai-fw ai-google-scholar-square"
+      url: "https://scholar.google.com/citations?user=nX7uN2EAAAAJ"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/tim-the-baker"
+    - label: "Gitlab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.eecs.umich.edu/bakertim"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "tim /at/ bakertim.com"
+      icon: "fas fa-fw fa-envelope"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/timothy-james-baker/"
+    - label: "Google Scholar"
+      icon: "ai ai-fw ai-google-scholar-square"
+      url: "https://scholar.google.com/citations?user=nX7uN2EAAAAJ"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/tim-the-baker"
+    - label: "Gitlab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.eecs.umich.edu/bakertim"
 
 defaults:
   # _posts
