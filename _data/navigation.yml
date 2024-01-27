@@ -1,9 +1,16 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
     url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "For Recruiters"
+    url: /recruit/
+  - title: "News"
+    url: /news/
+projects:
+    - title: "3D Medical Image Segmentation"
+      url: "/projects/seg"
+    - title: "Stochastic Circuit Noise Modeling"
+      url: "projects/noise-model"
+    - title: "Hearing Aid Filterbank Design"
+      url: "projects/hearing-aids"

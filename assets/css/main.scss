@@ -5,13 +5,72 @@ search: false
 
 @charset "utf-8";
 
-//$link-color: #059cbf;
+$link-color: #B12B3A;
+$primary-color: #B12B3A;
 //$body-color: #E8DACC;
 //$background-color: #E8DACC;
 //$masthead-link-color: #A6766F;
-//$footer-background-color: #D0AC98;
-$footer-background-color: #E8D5B7;
+$footer-background-color: #DDDDDD;
+$sidebar-opacity: 1.00;
+$border-color: #B12B3A;
 //$footer-color: wheat;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+@import "minimal-mistakes";
+
+// Footer font color (Added by tim)
+.page__footer {
+  color: #000 !important; // override
+}
+
+// sidebar opacity
+.sidebar {
+    opacity: 1.0 !important;
+}
+
+.masthead {
+  border-bottom-width: 0;
+}
+
+page__content {
+  h2 {
+    padding-bottom: 1.0em;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+//.masthead__inner-wrap {
+//  border-color: #ccc;
+//  border-width: 0 2px 2px 2px;
+//  border-style: solid;
+//}
+
+.masthead__inner-wrap, .site-nav, .greedy-nav {
+  background: #ddd;
+}
+
+// Font sizes (Added by time)
+html {
+  font-size: 14px;
+
+  @include breakpoint($medium) {
+    font-size: 16px;
+  }
+
+  @include breakpoint($large) {
+    font-size: 18px;
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 20px;
+  }
+}
+
+// for about borders
+.bordered_image {
+  border: 1px solid black;
+  margin-right: 5%;
+  margin-left: 5%;
+}

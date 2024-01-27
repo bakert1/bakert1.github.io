@@ -13,19 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: TB
+title: Timothy James Baker
 title_separator: "|"  # e.g., Blog | TB
-subtitle: Timothy James Baker
+subtitle: "Researcher  |  Data Scientist  |  Endurance Runner"
 
 name: Timothy J. Baker
 email: tim@bakertim.com
-twitter_username: timothyjamesbaker
+#twitter_username: timothyjamesbaker
 github_username: tim-the-baker
 
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website of Timothy James Baker, Ph.D.
-minimal_mistakes_skin: sunrise
-search: true
+minimal_mistakes_skin: air
+search: false
 
 # Build settings
 markdown: kramdown
@@ -63,7 +63,7 @@ plugins:
 author:
   name   : "Timothy J. Baker, Ph.D."
   avatar : "/assets/images/bio_photo.jpg"
-  bio    : "Research Fellow at Michigan Medicine using machine learning to aid physicians in the diagnosis and treatment of human diseases."
+  bio    : "Research Fellow at Michigan Medicine using machine learning to improve patient care and the clinical workflow."
   links:
     - label: "tim /at/ bakertim.com"
       icon: "fas fa-fw fa-envelope"
@@ -97,6 +97,12 @@ footer:
       icon: "fab fa-fw fa-gitlab"
       url: "https://gitlab.eecs.umich.edu/bakertim"
 
+collections:
+  med-image-tutorial:
+    output: true
+    permalink: /:collection/:path/
+
+
 defaults:
   # _posts
   - scope:
@@ -116,6 +122,15 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: ""
+      type: med-image-tutorial
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      sidebar:
+        nav: med-image-tutorial
 
 category_archive:
   type: liquid
@@ -123,3 +138,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+atom_feed:
+  hide: true
