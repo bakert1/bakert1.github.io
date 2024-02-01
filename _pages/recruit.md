@@ -9,9 +9,19 @@ classes: wide
 ---
 Hi! I'm Timothy Baker, a postdoctoral research fellow at Michigan Medicine developing computer vision solutions to challenges in healthcare.
 
-I have a Ph.D. in Computer Science in Engineering and my technical skills include Python programming, data science, deep learning, and high performance computing. Many of my [projects](/projects) have been in computer vision and digital design with a focus on health care applications.
+I am currently seeking a position where I can continue to develop data-drive solutions to challenges in the healthcare, semiconductor, or information technology industries.
 
-I am currently on the job market, seeking a position where I can continue to develop data-drive solutions to challenges in areas of national importance. I am especially interested in the healthcare, semiconductor, and information technology industries.
+Alongside developing technical know-how and expertise, I strive to understand the context of the problem as much as possible with the goal of developing solutions that have actual impact.
+
+Please reach me at tim\[at\]bakertim.com to discuss what I may bring to your open data scientist (or similar) role.
+
+Skills overview:
+- Ph.D. in Computer Science and Engineering; B.Sc. Physics.
+- Python (9 years); Libraries: PyTorch, Lightning, MONAI, Numpy, Pandas, etc.
+- Data science expertise with focus on computer vision and deep learning.
+- Experience developing high throughput neural networks on high performance computing (HPC) SLURM clusters.
+- Experience developing efficient neural network for on-device machine learning.
+- Led many successful research [projects](/projects) for applications health care and digital design (7+ first-author publications in leading IEEE/ACM venues).
 
 Quick links:
 - <a href="/assets/docs/Baker_resume_h.pdf" target="_blank">Resume (healthcare focused)</a>
