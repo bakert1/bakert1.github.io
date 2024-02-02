@@ -8,9 +8,9 @@ Hi! I'm Timothy Baker, a postdoctoral research fellow at Michigan Medicine devel
 
 I am currently seeking a position where I can continue to develop data-drive solutions to challenges in the healthcare, semiconductor, or information technology industries.
 
-Alongside developing technical know-how and expertise, I strive to understand the context of the problem as much as possible. The goal is to develop solutions that have actual impact.
+Alongside developing technical know-how and expertise, I strive to understand the context of the problem as much as possible. My goal is to develop solutions that have actual impact.
 
-Please reach me at tim\[at\]bakertim.com to discuss what I may bring to your open data scientist (or similar) role.
+You can reach me at tim\[at\]bakertim.com to discuss what I may bring to your open data scientist (or similar) role.
 
 Skills overview:
 - Ph.D. in Computer Science and Engineering; B.Sc. Physics.
