@@ -39,7 +39,7 @@ I certainly did not grow up as a runner or someone who expected to spend signifi
 	  Tim after running the 2020 Detroit marathon.
 </p>
 
-While training for that first marathon, I fell in love with running. Once you build up a bit of cardio, running becomes a fulfilling and enjoyable activity. Most runs are low intensity which offers the ability to think about life which can be very therapeutic. Other times, jamming out to music or listening to audiobooks or podcasts is enjoyable. Meanwhile the high intensity runs are challenging but offer a great way to track progress and push your potential.
+While training for that first marathon, I fell in love with running. Once you build up a bit of cardio, running becomes a fulfilling and enjoyable activity. Most runs are low intensity which offers the ability to think about life, to jam out to music, or to listen to audiobooks/podcasts. Then there's the high intensity runs which are challenging and offer offer a great way push your potential.
 
 ## Other Interests
-I also enjoy reading as well as listening to audiobooks and podcasts. I mostly engage with nonfiction works on science topics, but I always enjoy the excellent fictional works recommended by friends. My other interest include pixel art, cross stitching and building legos (particularly the architectures sets).
+I also enjoy reading as well as listening to audiobooks and podcasts. I mostly engage with nonfiction works on science topics, but I also enjoy fictional works, usually at the recommendation of a friend. My other interest include pixel art, cross stitching and building legos (particularly the architectures sets).
