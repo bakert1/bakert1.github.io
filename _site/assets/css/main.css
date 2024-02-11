@@ -2576,3 +2576,13 @@ html { font-size: 14px; }
 @media (min-width: 80em) { html { font-size: 20px; } }
 
 .bordered_image { border: 1px solid black; margin-right: 5%; margin-left: 5%; }
+
+.center { display: block; margin-left: auto; margin-right: auto; }
+
+.half_width { width: 50%; }
+
+.three_four_width { width: 75%; }
+
+.full_width { width: 100%; }
+
+.table { background: white; padding: 10pt 10pt 10pt 5pt; }

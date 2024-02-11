@@ -1,0 +1,522 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Automatically Quantifying Aortic Growth in Diverse 3D Medical Images | Timothy James Baker</title>
+<meta name="description" content="Overview This work was awarded ‘Best Technical Contribution’ at the Michigan AI Symposium 2023. Link to paper">
+
+
+  <meta name="author" content="Timothy J. Baker, Ph.D.">
+  
+  <meta property="article:author" content="Timothy J. Baker, Ph.D.">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Timothy James Baker">
+<meta property="og:title" content="Automatically Quantifying Aortic Growth in Diverse 3D Medical Images">
+<meta property="og:url" content="http://localhost:4000/projects/seg">
+
+
+  <meta property="og:description" content="Overview This work was awarded ‘Best Technical Contribution’ at the Michigan AI Symposium 2023. Link to paper">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2024-02-11T00:00:00-05:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/projects/seg">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Timothy J. Baker",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <!-- the following line was added by Tim (it's used to enable academicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div>
+    <p></p>
+    <img src="http://localhost:4000/assets/images/Banner3-icons2.png" style="display: block; margin-left: auto; margin-right: auto;">
+    <div class="masthead__inner-wrap">
+      <div class="masthead__menu">
+        <nav id="site-nav" class="greedy-nav">
+          
+          <a class="site-title" href="/">
+            Timothy James Baker
+            <span class="site-subtitle">Researcher  |  Data Scientist  |  Endurance Runner</span>
+          </a>
+          <ul class="visible-links"><li class="masthead__menu-item">
+                <a href="/about/">About</a>
+              </li><li class="masthead__menu-item">
+                <a href="/projects/">Projects</a>
+              </li><li class="masthead__menu-item">
+                <a href="/recruit/">For Recruiters</a>
+              </li><li class="masthead__menu-item">
+                <a href="/news/">News</a>
+              </li></ul>
+          
+          <button class="greedy-nav__toggle hidden" type="button">
+            <span class="visually-hidden">Toggle menu</span>
+            <div class="navicon"></div>
+          </button>
+          <ul class="hidden-links hidden"></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/bio_photo.jpg" alt="Timothy J. Baker, Ph.D." itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Timothy J. Baker, Ph.D.</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Research Fellow at Michigan Medicine using machine learning to improve patient care and the clinical workflow.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/timothy-james-baker/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://scholar.google.com/citations?user=nX7uN2EAAAAJ" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="ai ai-fw ai-google-scholar-square" aria-hidden="true"></i><span class="label">Google Scholar</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/tim-the-baker" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://gitlab.eecs.umich.edu/bakertim" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i><span class="label">Gitlab</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Automatically Quantifying Aortic Growth in Diverse 3D Medical Images">
+    <meta itemprop="description" content="OverviewThis work was awarded ‘Best Technical Contribution’ at the Michigan AI Symposium 2023. Link to paper">
+    <meta itemprop="datePublished" content="2024-02-11T00:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/projects/seg" class="u-url" itemprop="url">Automatically Quantifying Aortic Growth in Diverse 3D Medical Images
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#overview">Overview</a><ul><li><a href="#outcome">Outcome</a></li><li><a href="#my-contributions">My Contributions</a></li></ul></li><li><a href="#details">Details</a><ul><li><a href="#architecture">Architecture</a></li><li><a href="#u-net-performance">U-Net Performance</a></li><li><a href="#automated-diameter-measurement-performance">Automated Diameter Measurement Performance</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="overview">Overview</h2>
+<p><em>This work was awarded ‘Best Technical Contribution’ at the Michigan AI Symposium 2023. <a href="https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging/volume-10/issue-5/051810/Fully-automated-pipeline-for-measurement-of-the-thoracic-aorta-using/10.1117/1.JMI.10.5.051810.short">Link to paper</a></em></p>
+
+<p><strong>Context:</strong>  Diagnosis and surveillance of thoracic aortic aneurysm (TAA) involves measuring the aortic diameter at various locations along the length of the aorta, often using computed tomography angiography (CTA) scans.</p>
+
+<p><img src="/assets/images/seg/healthy-vs-non-healthy-aorta.png" class="center three_four_width" /></p>
+
+<p><strong>Challenge:</strong> Aortic measurements performed by expert human raters require 15 to 45 min of focused effort that can be prone to be mistakes.</p>
+
+<p><strong>Objective:</strong>  Develop a computer vision pipeline to automate accurate aortic diameter measurements.</p>
+
+<p><img src="/assets/images/seg/pipeline3.png" class="center full_width" /></p>
+
+<h3 id="outcome">Outcome</h3>
+<p>Developed a fully automated aortic diameter measurement pipeline using deep learning and classical computer vision techniques. We demonstrated low errors that are comparable in magnitude to those from manual measurement. Our pipeline offers significant time savings compared to manual measurements that take 15 to 40 minutes.</p>
+
+<h3 id="my-contributions">My Contributions</h3>
+<ol>
+  <li><strong>Data preparation:</strong> Developed a robust ETL pipeline in Python to clean and organize 720+ new 3D CTA volumes into a standardize format.  Final dataset is about 700 GB.</li>
+  <li><strong>Training optimization:</strong> Improved CNN training speed by a factor of 500 by minimizing data movement, implementing half precision training, utilizing parallel GPU processing on a SLURM cluster, and addressing other bottlenecks.</li>
+  <li><strong>Prediction optimization:</strong> Improved prediction accuracy by utilizing a sliding window inference function and improved prediction time by a factor of 10 by addressing pipeline bottlenecks like unnecessary data movement.</li>
+  <li><strong>Performance Validation:</strong> Implemented cross-fold validation and ran statistical paired t-tests to compare different network architectures and training approaches. Found that multitask training improved accuracy compared to traditional single task training approach.</li>
+  <li><strong>Guard Rails:</strong> Implemented guardrails for when this software is deployed in a clinical setting. Specifically, the pipeline not only outputs diameter measurements, but displays visuals of those measurements that can be easily verified by a physician.</li>
+</ol>
+
+<h2 id="details">Details</h2>
+<h3 id="architecture">Architecture</h3>
+<p>U-Net is a deep neural network architecture named for its shape. It features an encoder-decoder structure with skip connections. U-Nets are commonly used in medical image analysis due to their ability to combine high-level features learned via the encode-decoder structure with precise detail maintained with skip connections. We train a 3D U-Net to segment the aorta from a 3D CTA volume and to localize six key anatomical landmarks.</p>
+
+<figure>
+    <img src="/assets/images/seg/architecture.png" class="center full_width bordered_image" />
+    <figcaption>
+    Our multitask U-Net architecture.
+    </figcaption>
+</figure>
+
+<h3 id="u-net-performance">U-Net Performance</h3>
+<p>Our problem has two tasks, segmentation and landmark localization. We trained two separate “single task” U-Nets to perform these functions and compared their performance to a single “multitask” U-Net trained to perform both functions. Using 5-fold cross validation and paired t-tests, we found that the multitask network performed better at segmentation \((p&lt;0.0002)\) while the single tasks network approach led to better landmark localization \((p&lt;0.0001)\).</p>
+
+<p><img src="/assets/images/seg/unet-performance.png" class="center" /></p>
+
+<p>Since accurate segmentation is more important for diameter measurement, we opted to use the multitask network in our full diameter measurement pipeline.</p>
+
+<h3 id="automated-diameter-measurement-performance">Automated Diameter Measurement Performance</h3>
+<p>Like many real world tasks, “ground truth” is not easily accessible. In our case, the actual diameter of the aorta is difficult to determine from a CTA scan, even when done manually by an expert. In fact, measurements performed by two experts on the same scan vary by 2-5 mm on average and similar variability is observed when the same expert measures the same scan on two different days. For our evaluation, we use the average of three expert measurements as the target or ‘ground truth’ size of the aortic diameter. Measurements were performed at the nine standard clinical locations.</p>
+
+<figure>
+    <img src="/assets/images/seg/diameter_performance.png" class="center full_width bordered_image" />
+    <figcaption>The above Bland-Altman plot shows that the automated diameter measurement pipeline is accurate across the nine measurements locations and is accurate across a variety of aortic diameter sizes.</figcaption>   
+</figure>
+<p>We also compared our automated pipeline to the standard deviation of the three manual measurements and demonstrate that the automated solution has comparable variability.</p>
+
+<p><img src="/assets/images/seg/diameter_table.png" class="center table" /></p>
+
+<p>Overall, our automated pipeline achieved less than 1 mm mean absolute error (MAE) in six of the nine locations. MAE is 1.48 mm to 2.18 mm in the three other locations where manual measurement variance is also highest. Overall error is within acceptable limits and comparable to human measurement variability.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2024-02-11T00:00:00-05:00">February 11, 2024</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Automatically+Quantifying+Aortic+Growth+in+Diverse+3D+Medical+Images%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fseg" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fseg" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fseg" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/" class="pagination--pager" title="Test
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You May Also Enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/" rel="permalink">Test
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Rapid Development of Medical Image Segmentation Pipelines Using PyTorch-Lightning and MONAI
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/timothy-james-baker/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://scholar.google.com/citations?user=nX7uN2EAAAAJ" rel="nofollow noopener noreferrer"><i class="ai ai-fw ai-google-scholar-square" aria-hidden="true"></i> Google Scholar</a></li>
+        
+      
+        
+          <li><a href="https://github.com/tim-the-baker" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://gitlab.eecs.umich.edu/bakertim" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab</a></li>
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Timothy J. Baker. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  </body>
+</html>
