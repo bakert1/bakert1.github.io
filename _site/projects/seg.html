@@ -312,7 +312,7 @@
         <h2 id="overview">Overview</h2>
 <p><em>This work was awarded ‘Best Technical Contribution’ at the Michigan AI Symposium 2023. <a href="https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging/volume-10/issue-5/051810/Fully-automated-pipeline-for-measurement-of-the-thoracic-aorta-using/10.1117/1.JMI.10.5.051810.short">Link to paper</a></em></p>
 
-<p><strong>Context:</strong>  Diagnosis and surveillance of thoracic aortic aneurysm (TAA) involves measuring the aortic diameter at various locations along the length of the aorta, often using computed tomography angiography (CTA) scans.</p>
+<p><strong>Context:</strong>  Diagnosis and surveillance of thoracic aortic aneurysm (TAA) involves measuring the aortic diameter at various locations along the length of the aorta, often using computed tomography angiography (CTA) scans. Rapid aorta growth indicates cause for concern and possible surgical interventions.</p>
 
 <p><img src="/assets/images/seg/healthy-vs-non-healthy-aorta.png" class="center three_four_width" /></p>
 
@@ -327,9 +327,9 @@
 
 <h3 id="my-contributions">My Contributions</h3>
 <ol>
-  <li><strong>Data preparation:</strong> Developed a robust ETL pipeline in Python to clean and organize 720+ new 3D CTA volumes into a standardize format.  Final dataset is about 700 GB.</li>
+  <li><strong>Data preparation:</strong> Developed a robust ETL pipeline in Python to clean and organize 720+ new 3D CTA volumes into a standardized format.  Final dataset is about 700 GB.</li>
   <li><strong>Training optimization:</strong> Improved CNN training speed by a factor of 500 by minimizing data movement, implementing half precision training, utilizing parallel GPU processing on a SLURM cluster, and addressing other bottlenecks.</li>
-  <li><strong>Prediction optimization:</strong> Improved prediction accuracy by utilizing a sliding window inference function and improved prediction time by a factor of 10 by addressing pipeline bottlenecks like unnecessary data movement.</li>
+  <li><strong>Prediction optimization:</strong> Improved prediction accuracy by utilizing a sliding window inference function. Improved prediction time by a factor of 10 by addressing pipeline bottlenecks like unnecessary data movement.</li>
   <li><strong>Performance Validation:</strong> Implemented cross-fold validation and ran statistical paired t-tests to compare different network architectures and training approaches. Found that multitask training improved accuracy compared to traditional single task training approach.</li>
   <li><strong>Guard Rails:</strong> Implemented guardrails for when this software is deployed in a clinical setting. Specifically, the pipeline not only outputs diameter measurements, but displays visuals of those measurements that can be easily verified by a physician.</li>
 </ol>
@@ -353,17 +353,17 @@
 <p>Since accurate segmentation is more important for diameter measurement, we opted to use the multitask network in our full diameter measurement pipeline.</p>
 
 <h3 id="automated-diameter-measurement-performance">Automated Diameter Measurement Performance</h3>
-<p>Like many real world tasks, “ground truth” is not easily accessible. In our case, the actual diameter of the aorta is difficult to determine from a CTA scan, even when done manually by an expert. In fact, measurements performed by two experts on the same scan vary by 2-5 mm on average and similar variability is observed when the same expert measures the same scan on two different days. For our evaluation, we use the average of three expert measurements as the target or ‘ground truth’ size of the aortic diameter. Measurements were performed at the nine standard clinical locations.</p>
+<p>Like many real world tasks, “ground truth” is not easily accessible. In our case, the actual diameter of the aorta is difficult to determine from a CTA scan, even when done manually by an expert. In fact, measurements performed by two experts on the same scan vary by 2-5 mm on average and similar variability is observed when the same expert measures the same scan on two different days. For our evaluation, we use the average of three expert measurements as the target or ‘ground truth’ size of the aortic diameter.</p>
 
 <figure>
     <img src="/assets/images/seg/diameter_performance.png" class="center full_width bordered_image" />
-    <figcaption>The above Bland-Altman plot shows that the automated diameter measurement pipeline is accurate across the nine measurements locations and is accurate across a variety of aortic diameter sizes.</figcaption>   
+    <figcaption>Measurements are performed at the nine standard clinical locations. The above Bland-Altman plot shows that the automated diameter measurement pipeline is accurate across the nine measurements locations and is accurate across a variety of aortic diameter sizes.</figcaption>   
 </figure>
 <p>We also compared our automated pipeline to the standard deviation of the three manual measurements and demonstrate that the automated solution has comparable variability.</p>
 
 <p><img src="/assets/images/seg/diameter_table.png" class="center table" /></p>
 
-<p>Overall, our automated pipeline achieved less than 1 mm mean absolute error (MAE) in six of the nine locations. MAE is 1.48 mm to 2.18 mm in the three other locations where manual measurement variance is also highest. Overall error is within acceptable limits and comparable to human measurement variability.</p>
+<p>Overall, our automated pipeline achieved less than 1 mm mean absolute error (MAE) in six of the nine locations. MAE is 1.48 mm to 2.18 mm in the three other locations where manual measurement variance is also highest. Overall, the measurement error is within acceptable limits and comparable to human measurement variability.</p>
 
         
       </section>
@@ -391,16 +391,6 @@
 
 
       
-  <nav class="pagination">
-    
-      <a href="/posts/" class="pagination--pager" title="Test
-">Previous</a>
-    
-    
-      <a href="#" class="pagination--pager disabled">Next</a>
-    
-  </nav>
-
     </div>
 
     
@@ -413,49 +403,9 @@
       <div class="grid__wrapper">
         
           
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/posts/" rel="permalink">Test
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Rapid Development of Medical Image Segmentation Pipelines Using PyTorch-Lightning and MONAI
-
-</p>
-  </article>
-</div>
-
-        
+            
       </div>
     </div>
-  
   
 </div>
 

@@ -18,11 +18,10 @@ Skills overview:
 - Data science expertise with focus on computer vision and deep learning.
 - Experience developing high throughput neural networks on SLURM computing clusters.
 - Experience developing efficient neural network for on-device machine learning.
-- Led many successful research [projects](/projects) for applications health care and digital design (7+ first-author publications in leading IEEE/ACM venues).
+- Led many successful research [projects](/projects) for applications health care and digital design (7+ first-author [publications](https://scholar.google.com/citations?user=nX7uN2EAAAAJ&hl=en&authuser=1&oi=sra) in leading IEEE/ACM venues).
 
 Quick links:
-- <a href="/assets/docs/Baker_resume_h.pdf" target="_blank">Resume (healthcare focused)</a>
-- <a href="/assets/docs/Baker_resume_sp.pdf" target="_blank">Resume (signal processing focused)</a>
+- <a href="/assets/docs/Baker_Resume_02-2024.pdf" target="_blank">Resume</a>
 - [Projects](/projects)
 - [Research Publications](https://scholar.google.com/citations?user=nX7uN2EAAAAJ)
 
