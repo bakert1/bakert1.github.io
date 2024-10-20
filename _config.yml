@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Timothy James Baker
 title_separator: "|"  # e.g., Blog | TB
-subtitle: "Researcher  |  Data Scientist  |  Endurance Runner"
+subtitle: "Researcher  |  Software Engineer |  Endurance Runner"
 
 name: Timothy J. Baker
 email: tim@bakertim.com
@@ -63,7 +63,7 @@ plugins:
 author:
   name   : "Timothy J. Baker, Ph.D."
   avatar : "/assets/images/bio_photo.jpg"
-  bio    : "Research Fellow at Michigan Medicine using machine learning to improve patient care and the clinical workflow."
+  bio    : "Senior Software Engineer @ Eikon Therapeutics leveraging machine learning to transform the drug discovery process."
   links:
     - label: "tim /at/ bakertim.com"
       icon: "fas fa-fw fa-envelope"
@@ -76,9 +76,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/tim-the-baker"
-    - label: "Gitlab"
-      icon: "fab fa-fw fa-gitlab"
-      url: "https://gitlab.eecs.umich.edu/bakertim"
 
 footer:
   links:
@@ -93,9 +90,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/tim-the-baker"
-    - label: "Gitlab"
-      icon: "fab fa-fw fa-gitlab"
-      url: "https://gitlab.eecs.umich.edu/bakertim"
 
 collections:
   med-image-tutorial:

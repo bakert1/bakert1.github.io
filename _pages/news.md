@@ -7,6 +7,8 @@ classes: wide
 <h1>News</h1>
 <hr color="#B12B3A" size="8">
 
+- **September 9, 2024:** Started as a Senior Software Engineer in Applied ML at Eikon Therapeutics!
+- **August 9, 2024:** Completed my radiology postdoc at the University of Michigan Hospital System.
 - **November 26, 2023:** Attended the Radiological Society of North America (RSNA) conference for the first time! Really exciting atmosphere and plenty of interesting AI talks.
 - **October 31st, 2023:** Our manuscript <a target="_blank" href="https://doi.org/10.1117/1.JMI.10.5.051810">Fully automated pipeline for measurement of the thoracic aorta using joint segmentation and localization neural network</a> was published in the Journal of Medical Imaging.
 - **October 17, 2023:** Awarded "Best Technical Contribution" for my poster at the University of Michigan's <a target="_blank" href="https://ai.engin.umich.edu/events/2023-ai-symposium/">2023 AI Symposium</a>. Grateful to my new research team for their help on this project!
